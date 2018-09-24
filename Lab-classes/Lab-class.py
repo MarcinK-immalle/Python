@@ -1,7 +1,23 @@
 class Lab:
-    myIDs=[]
-    myStudents=[]
-    credits=[]
+    def __init__(self, maxStudents):
+        self.teacher = "unknown"
+        self.room = "unknown"
+        self.timeAndDay = "unknown"
+        self.students = students[]
+        self.capacity = maxStudents
+    
+    def enrollStudent(self, newStudent):
+        if(self.capacity == maxStudents) {print("The class is full, you cannot enrol.")}
+        else{students.add(newStudent);}
+    
+    def numberOfStudents(self):
+        return students.size();
+    
+    def setRoom(self,roomNumber):
+        self.room = roomNumber;
+    
+    def setTime(self,timeAndDaySting):
+        selftimeAndDay = timeAndDaySting;
 
 class Student:
     def __init__(self,studentName,studentID):
@@ -21,4 +37,6 @@ class Student:
     def addCredits(self, addPoints):
         self.credits += addPoints
 
-    
+    if __name__ == '__main__':
+        student1 = student(joske,123456);
+        printStudent(student1)
