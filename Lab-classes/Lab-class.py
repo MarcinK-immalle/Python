@@ -3,7 +3,7 @@ class Lab:
         self.teacher = "unknown"
         self.room = "unknown"
         self.timeAndDay = "unknown"
-        self.students = students[]
+        self.students = students[maxStudents]
         self.capacity = maxStudents
     
     def enrollStudent(self, newStudent):
@@ -29,7 +29,7 @@ class Student:
         print(self.name[0:4] + self.id[0:3])
 
     def printStudent(self):
-        print("Name: "+self.name + " ," + "Id: "+self.id + " ," + "credits: " + self.credits)
+        print("Name: {name}, Id: {id}, credits {credits}".format(name=self.name, id=self.id, credits=self.credits))
 
     def changeName(self, newName):
         self.name = newName
@@ -37,6 +37,6 @@ class Student:
     def addCredits(self, addPoints):
         self.credits += addPoints
 
-    if __name__ == '__main__':
-        student1 = student(joske,123456);
-        printStudent(student1)
+if __name__ == '__main__':
+    student1 = Student("joske", "123456")
+    student1.printStudent()
