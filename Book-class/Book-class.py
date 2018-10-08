@@ -3,5 +3,5 @@ class Book:
         self.bookAuthor = Author
         self.bookTitle = Title
 
-b1 = Book("demauthor","demtitle");
-b2 = Book("demauthor2","demtitle2");
+b1 = Book("demauthor","demtitle")
+b2 = Book("demauthor2","demtitle2")
